@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Countdown</title>
+</head>
+<body>
+  <h1>Birthday Countdown</h1>
+  <form action="/calculate" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    <br>
+    <label for="birthday">Birthday:</label>
+    <input type="date" id="birthday" name="birthday" required>
+    <br>
+    <button type="submit">Calculate</button>
+  </form>
+  <% if (daysLeft !== null) { %>
+    <p>Hello, <%= name %>! Your next birthday is in <%= daysLeft %> days, and you are <%= age %> years old.</p>
+  <% } %>
+</body>
+</html>
