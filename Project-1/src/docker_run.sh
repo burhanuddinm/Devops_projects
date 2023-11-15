@@ -45,3 +45,11 @@ if ! command -v node &> /dev/null; then
 else
     echo "Node.js and npm are already installed."
 fi
+
+# Run Docker Image for Birthday Count 
+
+# Replace "<image>" with the actual image name or ID
+IMAGE_NAME="burhandm/birthday-app:v1"
+
+# Run the Docker container
+docker run -d -p 80:80 $IMAGE_NAME
