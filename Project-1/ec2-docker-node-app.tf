@@ -37,7 +37,7 @@ variable "git_repo_url" {
 
 variable "git_script_name" {
   description = "Name of the script in the Git repository"
-  default     = "docker_run.sh"
+  default     = "Project-1/src/docker_run.sh"
 }
 
 variable "script_directory" {
